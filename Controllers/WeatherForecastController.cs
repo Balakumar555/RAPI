@@ -34,6 +34,7 @@ public class WeatherForecastController : ControllerBase
     public IActionResult Get(int custId)
     {
         var customer = new { Id = custId, Name = "Balakumar" };
+        Console.WriteLine("Customer Object", customer);
         return Ok(customer);
     }
 
